@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.hero {
+    width: 100%;
+    height: max-content;
+    background-color: #000;
+    background-image:
+        radial-gradient(circle at 40% 30%, rgb(0, 0, 0) 0%, transparent 60%),
+        radial-gradient(circle at 70% 70%, rgba(0, 0, 0, 0.116) 0%, transparent 60%),
+        linear-gradient(to bottom, rgba(14, 102, 68, 0.295), rgba(0, 0, 7, 0.95)),
+        repeating-linear-gradient(
+            to right,
+            rgba(70, 130, 180, 0.05) 0px,
+            rgba(70, 130, 180, 0.05) 1px,
+            transparent 1px,
+            transparent 30px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            rgba(70, 130, 180, 0.05) 0px,
+            rgba(70, 130, 180, 0.05) 1px,
+            transparent 1px,
+            transparent 30px
+        );
+    background-blend-mode: screen, lighten, normal;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+}
+.hero-main-content {
+   width: 100%;
+   height: max-content;
+   display: flex;
+   flex-direction: row;
+}
+.textual-content {
+  width: 50%;
+  margin-left: 3rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  color: #cbd5e1; /* soft cool light gray-blue for main text */
+  font-family: 'DM Sans', sans-serif;
+}
+
+.greeting {
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(90deg, #ffffff, #ffffff); /* purple to deep indigo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: #fefdffcc; /* muted violet with opacity */
+  border: none;
+  max-width: 4rem;
+}
+
+.name {
+  font-size: 3.25rem;
+  font-weight: 900;
+  white-space: nowrap;
+  color: #ffffff; /* lighter violet */
+  /* text-shadow: 0 2px 10px rgba(3, 3, 3, 0.8); */
+    font-family: "Quantico", sans-serif;
+  animation: zoomIn 1.1s ease-in-out;
+}
+
+.eng{
+     font-family: "Quantico", sans-serif;
+}
+.fstack{
+  font-family: "Quantico", sans-serif;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  width: max-content;
+
+  background: linear-gradient(90deg, #00ca76, #fefeff); /* medium to bright blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow: 0 2px 15px rgba(37, 99, 235, 0.25);
+  animation: slideInLeft 1.2s ease-out;
+}
+
+.divider {
+  font-weight: 700;
+  color: #e0eaff; /* medium blue */
+  display: flex;
+  align-self: center;
+  font-size: 2.2rem;
+  transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(90deg, #ffffff, #ffffff); /* medium to bright blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+.btn {
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 18px rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, #006e12, #3b82f6); /* deeper blue gradient */
+  color: #fff;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.5);
+}
+
+.btn.secondary {
+background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
+  color: #d1fae5;
+  border-radius: 6px;
+}
+
+.btn.secondary:hover {
+  background: linear-gradient(135deg, #ff1201d5, #c51902);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(5, 150, 105, 0.45);
+}
+
+.or {
+  font-weight: 500;
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.image-content {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Keep circular shape while making image scalable */
+.image {
+    width: 80%;
+    aspect-ratio: 1 / 1.2;
+    overflow: hidden;
+
+    /* Enhanced Glassmorphism */
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+     box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.1),
+        0 0 15px 3px rgba(130, 170, 255, 0.7); /* glowing blue edge */
+    transition: all 0.3s ease-in-out;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.image:hover {
+    box-shadow:
+        0 4px 40px rgba(0, 0, 0, 0.2),
+        inset 0 0 30px rgba(255, 255, 255, 0.1),
+        0 0 50px 3px rgba(130, 170, 255, 0.7); /* glowing blue edge */
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .image-content {
+        max-width: 450px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .image-content {
+        max-width: 320px;
+    }
+
+    .image {
+        border-width: 0.3rem;
+    }
+}
+

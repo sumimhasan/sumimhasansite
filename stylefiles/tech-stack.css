@@ -1,0 +1,31 @@
+  .tech-stack {
+    width: 100%;
+    overflow: hidden;
+    background-color: #111;
+    padding: 20px 0;
+  }
+
+  .stack {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    animation: scroll 25s linear infinite;
+  }
+
+  .stack img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(0.7);
+    transition: transform 0.3s;
+  }
+
+  .stack img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }

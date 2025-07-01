@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+/* Code Block Styling */
+:root {
+  --color-keyword: #41e400;
+  --color-string: #ecc48d;
+  --color-function: #82aaff;
+  --color-punctuation: #89ddff;
+  --color-operator: #ff5370;
+  --color-variable: #f78c6c;
+  --color-comment: #5f7e97;
+  --font-family:"M PLUS 1 Code", monospace;
+  --font-weight: 400;
+}
+
+.code-block-wrapper {
+  
+  background-color: #ffffff00;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1rem 1rem 1.2rem 1rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+
+/* Header + Copy button */
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.1rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.code-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.copy-btn {
+  background: #cfa4a400;
+  color: #ccc;
+  border: 1px solid #444;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.copy-btn:hover {
+  background-color: #3c3c3c;
+}
+
+/* Token colors (like ChatGPT) */
+.token.keyword {
+  color: var(--color-keyword);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.token.string {
+  color: var(--color-string);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.token.function {
+  color: var(--color-function);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.token.punctuation {
+  color: var(--color-punctuation);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.token.operator {
+  color: var(--color-operator);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.token.variable {
+  color: var(--color-variable);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}
+
+.token.comment {
+  color: var(--color-comment);
+  font-style: italic;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}

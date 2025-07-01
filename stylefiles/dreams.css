@@ -1,0 +1,121 @@
+.dreams-goals-section {
+  background: linear-gradient(145deg, #0a0a0a, #111, #080f0f);
+  padding: 5rem 2rem;
+  color: #e0f7f1;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.project-case-title {
+  position: relative;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #34c78f;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(25, 0, 255, 0.4);
+}
+
+.project-case-title::before,
+.project-case-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 2px;
+  background-color: #34c78f;
+  transform: translateY(-50%);
+}
+
+.project-case-title::before {
+  left: 0;
+}
+
+.project-case-title::after {
+  right: 0;
+}
+
+/* Quote */
+.section-quote {
+  text-align: center;
+  font-style: italic;
+  color: #99ffe0;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 5px rgba(52, 199, 143, 0.3);
+}
+
+/* Content Blocks */
+.dreams-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.dream-block {
+  background-color: rgba(52, 199, 143, 0.05);
+  padding: 1.5rem;
+  border-left: 4px solid #34c78f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(25, 0, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dream-block:hover {
+  transform: translateY(-5px);
+}
+
+/* Subtitles */
+.dream-subtitle {
+  color: #34c78f;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.dream-subtitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #34c78f;
+  margin-top: 0.4rem;
+  transition: width 0.3s ease;
+}
+
+.dream-block:hover .dream-subtitle::after {
+  width: 80px;
+}
+
+/* Paragraphs */
+.dream-block p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #c0f9e7;
+  text-shadow: 0 0 3px rgba(52, 199, 143, 0.2);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .dreams-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dreams-content .dream-block:nth-child(3) {
+    grid-column: span 2;
+  }
+}
