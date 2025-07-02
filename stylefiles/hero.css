@@ -220,31 +220,44 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
 
 
 /* Tablet: width up to 1024px */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px){
   .hero-main-content {
     flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+    padding: 1.5rem 1rem;
   }
 
   .textual-content {
-    width: 100%;
-    margin: 3rem 1.5rem 2rem;
+    margin: 2rem 1rem 1.5rem;
     text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+
 
   .image-content {
     width: 100%;
     max-width: 500px;
     padding: 1rem;
   }
+ .image {
+    width: 100%;
+    border-radius: 1rem;
+    height: max-content;
+    font-size: 1rem;
+    scale: 1.1;
+    margin: 2rem;
+  }
 
   .titles {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 
   .name {
-    font-size: 2.5rem;
+    font-size:3rem;
   }
 
   .divider {
@@ -253,7 +266,7 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
 }
 
 /* Mobile: width up to 768px */
-@media (max-width: 768px) {
+ @media (max-width: 768px){
   .hero-main-content {
     flex-direction: column;
     padding: 1.5rem 1rem;
@@ -266,6 +279,7 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
 
   .titles {
     font-size: 1.85rem;
+    text-align: center;
   }
 
   .name {
@@ -306,52 +320,60 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
 }
 }
 
-/* Ultra-Wide Screens / 4K Monitors */
-@media (min-width: 2560px) {
-  html {
-    font-size: 18px; /* Slightly larger base font size */
-  }
-
-  .hero-main-content {
-    padding: 6rem 10rem;
-    gap: 5rem;
-  }
-
-  .textual-content {
-    margin-left: 6rem;
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-  }
-
-  .greeting {
-    font-size: 2.25rem;
-  }
-
-  .name {
-    font-size: 4.5rem;
-  }
-
-  .titles {
-    font-size: 4rem;
-  }
-
-  .divider {
-    font-size: 2.75rem;
-  }
-
-  .cta .btn {
-    font-size: 1.25rem;
-    padding: 1rem 2.5rem;
-  }
-
-  .image-content {
-    width: 100%;
-    max-width: 60%;
-    padding: 2rem;
-  }
+@media (min-width: 1920px){
 
   .image {
-    width: 100%;
-    border-radius: 2rem;
+    width: 80%;
+    aspect-ratio: 1 / 1.2;
+    margin-left: 12rem;
+    box-sizing: content-box;
+    font-size: 1.4rem;
+  
   }
+  .textual-content {
+    scale: 1.4;
+    padding: 7rem;
+    box-sizing: content-box;
+  }
+
+.image-content {
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+}
+@media (min-width: 2560px){
+
+  .image {
+    width: 80%;
+    aspect-ratio: 1 / 1.2;
+    margin-left: 12rem;
+    box-sizing: content-box;
+    font-size: 1.4rem;
+  
+  }
+  .textual-content {
+    scale: 1.8;
+    padding: 16rem;
+    box-sizing: content-box;
+    margin-left: 8rem;
+  }
+
+.image-content {
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
 }
