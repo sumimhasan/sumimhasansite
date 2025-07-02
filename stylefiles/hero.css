@@ -219,21 +219,139 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
 }
 
 
-/* Tablet */
+/* Tablet: width up to 1024px */
 @media (max-width: 1024px) {
-    .image-content {
-        max-width: 450px;
-    }
+  .hero-main-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .textual-content {
+    width: 100%;
+    margin: 3rem 1.5rem 2rem;
+    text-align: center;
+  }
+
+  .image-content {
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+  }
+
+  .titles {
+    font-size: 2.25rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .divider {
+    font-size: 2rem;
+  }
 }
 
-/* Mobile */
+/* Mobile: width up to 768px */
 @media (max-width: 768px) {
-    .image-content {
-        max-width: 320px;
-    }
+  .hero-main-content {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
 
-    .image {
-        border-width: 0.3rem;
-    }
+  .textual-content {
+    margin: 2rem 1rem 1.5rem;
+    text-align: center;
+  }
+
+  .titles {
+    font-size: 1.85rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .divider {
+    font-size: 1.75rem;
+  }
+
+  .image-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .image {
+    width: 100%;
+    border-radius: 1rem;
+    height: max-content;
+    font-size: 0.8rem;
+  }
+  .cta{
+    flex-direction:column;
+  }
+  .cta .btn {
+    width: 50%;
+
+  }
+  .cta .btn.secondary {
+    width: 50%;
+    height: 3rem;
+    align-content: center;
+  }
+  .cta .btn:active {
+  transform: scale(0.96);
+  background-color: #f12020; /* optional: a slight color change */
+}
 }
 
+/* Ultra-Wide Screens / 4K Monitors */
+@media (min-width: 2560px) {
+  html {
+    font-size: 18px; /* Slightly larger base font size */
+  }
+
+  .hero-main-content {
+    padding: 6rem 10rem;
+    gap: 5rem;
+  }
+
+  .textual-content {
+    margin-left: 6rem;
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+  }
+
+  .greeting {
+    font-size: 2.25rem;
+  }
+
+  .name {
+    font-size: 4.5rem;
+  }
+
+  .titles {
+    font-size: 4rem;
+  }
+
+  .divider {
+    font-size: 2.75rem;
+  }
+
+  .cta .btn {
+    font-size: 1.25rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .image-content {
+    width: 100%;
+    max-width: 60%;
+    padding: 2rem;
+  }
+
+  .image {
+    width: 100%;
+    border-radius: 2rem;
+  }
+}

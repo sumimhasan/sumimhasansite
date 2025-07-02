@@ -132,15 +132,17 @@
         align-items: center;
         transition: 0.3s;
         margin-top: 0.1rem;
+         
     }
 
     .navlink{
-        width: 100%;
+        width: 120%;
         height: auto;
         padding: 0.8rem;
         color: white;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 1.2rem;
     }
 
     .navigation-bar {
