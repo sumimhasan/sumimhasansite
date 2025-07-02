@@ -220,10 +220,10 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
 
 
 /* Tablet: width up to 1024px */
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 76px) and (max-width: 1024px){
   .hero-main-content {
     flex-direction: column;
-    padding: 1.5rem 1rem;
+
   }
 
   .textual-content {
@@ -243,6 +243,7 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
     max-width: 500px;
     padding: 1rem;
   }
+  
  .image {
     width: 100%;
     border-radius: 1rem;
@@ -302,17 +303,26 @@ background: linear-gradient(135deg, #006e12, #3b82f6); /* deep teal gradient */
     height: max-content;
     font-size: 0.8rem;
   }
-  .cta{
-    flex-direction:column;
-  }
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  animation: fadeInUp 1.4s ease-out;
+  width: 100%;
+}
   .cta .btn {
-    width: 50%;
+    width: 30%;
+    font-size: 3vw;
 
   }
   .cta .btn.secondary {
-    width: 50%;
-    height: 3rem;
+    width: 30%;
+    height: auto;
     align-content: center;
+        font-size: 3vw;
   }
   .cta .btn:active {
   transform: scale(0.96);
