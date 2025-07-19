@@ -16,9 +16,38 @@
     <link rel="stylesheet" href="stylefiles/dreams.css">
     <link rel="stylesheet" href="stylefiles/footer.css">
     <link rel="stylesheet" href="stylefiles/intro.css">
+    <link rel="stylesheet" href="stylefiles/modal.css">
+    <link rel="stylesheet" href="stylefiles/modal-messg.css">
 </head>
 
 <body id="body">
+    <div class="Messmodal-main">
+  <button class="Messmodal-close">&times;</button>
+
+  <div class="Messmodal-content">
+    <h2>Message Me</h2>
+    <form class="message-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+        <div class="modal-main">
+                <button class="modal-close">&times;</button>
+
+                <div class="modal-content">
+                    <h2>Connect with Me</h2>
+
+                    <div class="social-icons">
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
     <div class="hero">
         <div class="navigation-bar">
             <div class="logo-section">
@@ -35,8 +64,6 @@
             </div>
         </div>
         <div class="navspace" meta="this is for navbar space"></div>
-
-
         <div class="hero-main-content">
             <div class="textual-content">
                 <p class="greeting">Hello.</p>
@@ -53,9 +80,9 @@
                 </div>
 
                 <div class="cta">
-                    <a href="#contact" class="btn">Contact Me</a>
+                    <div  class="btn" id="contact-modal">Contact Me</div>
                     <span class="or">or</span>
-                    <a href="#message" class="btn secondary">Message Me</a>
+                    <div class="btn secondary" id="mess-modal">Message Me</div>
                 </div>
             </div>
 
@@ -70,9 +97,9 @@
 <span class="token keyword">import</span> <span class="token string">'myself' from intro </span><br>
 <span class="token keyword">const</span> <span class="token variable">name</span> <span class="token operator">=</span> <span class="token string">'Sumim Hasan'</span><br>
 <span class="token keyword">const</span> <span class="token variable">role</span> <span class="token operator">=</span> <span class="token string">'Full Stack Developer x AI/ML Engineer'</span><br>
-<span class="token keyword">const</span> <span class="token variable">skills</span> <span class="token operator">=</span> [<span class="token string">'React'</span>, <span class="token string">'Node.js'</span>, <span class="token string">'TailwindCSS'</span>]<br>
+<span class="token keyword">const</span> <span class="token variable">skills</span> <span class="token operator">=</span> [<span class="token string">'React'</span>, <span class="token string">'Node.js'</span>, <span class="token string">'Python'</span>]<br>
 <br>
-<span class="token function">getPassion</span><span class="token punctuation">()</span> <span class="token comment">// "Building slick UIs & solving real problems"</span><br>
+<span class="token function">getPassion</span><span class="token punctuation">()</span> <span class="token comment">// "Building slick WEB apps & solving AI problems"</span><br>
 <span class="token function">sayHi</span><span class="token punctuation">()</span> <span class="token comment">// "Let’s build something awesome!"</span>
       </div>
     </div>
@@ -195,16 +222,15 @@
                             alt="Project Image">
                     </div>
                     <div class="details-section">
-                        <div class="project-name">Project-name</div>
-                        <div class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-                            ducimus.</div>
+                        <div class="project-name"> The PixSafe </div>
+                        <div class="project-desc">An efficient and reliable system for detecting nudity in images, designed to ensure safety, uphold content moderation standards, and protect users across digital platforms. Built with accuracy, speed, and ethical responsibility in mind, it integrates advanced computer vision and AI techniques to help maintain respectful, secure online environments.</div>
                         <div class="project-cta">
                             <div class="like-and-share">
                                 <button class="like-btn"><i class="fas fa-heart"></i> Like</button>
                                 <button class="share-btn"><i class="fas fa-share-alt"></i> Share</button>
                             </div>
                             <div class="view-cta">
-                                <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                <a href="https://github.com/sumimhasan/PixSafe" class="view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
                             </div>
                         </div>
                     </div>
@@ -215,16 +241,35 @@
                             alt="Project Image">
                     </div>
                     <div class="details-section">
-                        <div class="project-name">Project-name</div>
-                        <div class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-                            ducimus.</div>
+                        <div class="project-name"> UniStack </div>
+                        <div class="project-desc">UniStack is a modern architectural pattern for building scalable, maintainable applications. It improves upon traditional MVC by offering a truly modular, intuitive structure designed for large-scale projects.</div>
                         <div class="project-cta">
                             <div class="like-and-share">
                                 <button class="like-btn"><i class="fas fa-heart"></i> Like</button>
                                 <button class="share-btn"><i class="fas fa-share-alt"></i> Share</button>
                             </div>
                             <div class="view-cta">
-                                <a href="#" class="view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                <a href="https://github.com/sumimhasan/Uni-Stack" class="view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="image-section">
+                        <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+                            alt="Project Image">
+                    </div>
+                    <div class="details-section">
+                        <div class="project-name"> impoman </div>
+                        <div class="project-desc">mpoman (Import Manager) is a simple Node.js CLI tool to automatically manage and inject require dependencies in your JavaScript files based on a declarative dependency.json configuration. It helps reduce manual import statements and speeds up your workflow.</div>
+                        <div class="project-cta">
+                            <div class="like-and-share">
+                                <button class="like-btn"><i class="fas fa-heart"></i> Like</button>
+                                <button class="share-btn"><i class="fas fa-share-alt"></i> Share</button>
+                            </div>
+                            <div class="view-cta">
+                                <a href="https://github.com/sumimhasan/impoMan" class="view-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
                             </div>
                         </div>
                     </div>
@@ -242,28 +287,22 @@
                 <div class="dreams-content">
                     <div class="dream-block">
                         <h3 class="dream-subtitle">Vision</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-                            Sed
-                            cursus ante dapibus diam.</p>
+                        <p>My vision is always toward the future.I believe in building intelligent, ethical, and impactful solutions that push boundaries . my goal is to shape a smarter, more connected, and more compassionate world through code</p>
                     </div>
                     <div class="dream-block">
                         <h3 class="dream-subtitle">Mission</h3>
-                        <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec
-                            tellus sed augue semper porta.</p>
+                        <p>To build smart, human-centered solutions using AI and modern web technologies — making innovation simple, useful, and impactful</p>
                     </div>
                     <div class="dream-block">
                         <h3 class="dream-subtitle">Commitment</h3>
-                        <p>Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
-                            conubia
-                            nostra, per inceptos himenaeos.</p>
-                    </div>
+                        <p>I’m committed to continuous learning, ethical innovation, and delivering high-quality tech that serves people and the planet.</p>
                 </div>
             </div>
         </section>
         <footer class="site-footer">
             <div class="footer-container">
                 <div class="footer-intro">
-                    <h2 class="footer-name">Your Name</h2>
+                    <h2 class="footer-name">Sumim Hasan</h2>
                     <p class="footer-bio">Full-stack Developer | Building clean, scalable, and creative digital
                         experiences.
                     </p>
@@ -275,7 +314,7 @@
                     <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-x-twitter"></i></a>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Your Name. All rights reserved.</p>
+                    <p>&copy; 2025 Sumim Hasan. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -284,4 +323,6 @@
 
 </body>
 <script src="scriptfiles/nav.js"></script>
+<script src="scriptfiles/modal.js"></script>
+<script src="scriptfiles/messmodal.js"></script>
 </html>
